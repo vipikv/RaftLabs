@@ -1,0 +1,19 @@
+{
+  "name": "raftlabs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/vipikv/RaftLabs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vipikv/RaftLabs/issues"
+  },
+  "homepage": "https://github.com/vipikv/RaftLabs#readme"
+}
