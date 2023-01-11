@@ -1,0 +1,59 @@
+<div class="container-fluid">
+    <h1>index page hbs</h1>
+    <a href="/find">find book or magazine</a>
+    <div>
+        <h3>authors</h3>
+        <table >
+                <tr>
+                    <th class="border border-dark">Email</th>
+                    <th class="border border-dark">firstname</th>
+                    <th class="border border-dark">lastname</th>
+                </tr>
+        {{#each authors}}
+                <tr>
+                    <td class="border border-dark">{{this.email}}</td>
+                    <td class="border border-dark">{{this.firstname}}</td>
+                    <td class="border border-dark">{{this.lastname}}</td>
+                </tr>
+        {{/each}}
+        </table>
+    </div>
+    <div>
+        <h3>Books</h3>
+        <table>
+                <tr>
+                    <th class="border border-dark">Title</th>
+                    <th class="border border-dark">ISBN</th>
+                    <th class="border border-dark">Authors</th>
+                    <th class="border border-dark">Description</th>
+                </tr>
+        {{#each books}}
+                <tr>
+                    <td class="border border-dark">{{this.title}}</td>
+                    <td class="border border-dark">{{this.isbn}}</td>
+                    <td class="border border-dark">{{this.authors}}</td>
+                    <td class="border border-dark">{{this.description}}</td>
+                </tr>
+        {{/each}}
+        </table>
+    </div>
+    <div>
+        <h3>Magazines</h3>
+        <table>
+                <tr>
+                    <th class="border border-dark">Title</th>
+                    <th class="border border-dark">ISBN</th>
+                    <th class="border border-dark">Authors</th>
+                    <th class="border border-dark">PublishedAt</th>
+                </tr>
+        {{#each magazines}}
+                <tr>
+                    <td class="border border-dark">{{this.title}}</td>
+                    <td class="border border-dark">{{this.isbn}}</td>
+                    <td class="border border-dark">{{this.authors}}</td>
+                    <td class="border border-dark">{{this.publishedAt}}</td>
+                </tr>
+        {{/each}}
+        </table>
+    </div>
+</div>

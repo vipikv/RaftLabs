@@ -1,0 +1,39 @@
+<div class="container-fluid">
+    <h6 class="mt-4">find book by isbn </h6>
+    <form action="/find-book-isbn" method="post">
+        <input type="hidden" id="bookisbn">
+        <input type="text" name="Bisbn" placeholder="enter isbn">
+        <button type="submit">find book</button>
+    </form>
+    <h6 class="mt-4">find magazine by isbn</h6>
+    <form action="/find-magazine-isbn" method="post">
+        <input type="hidden" id="magazineisbn">
+        <input type="text" name="Misbn" placeholder="enter isbn">
+        <button type="submit">find magazine</button>
+    </form>
+    <h6 class="mt-4">find book by author</h6>
+    <form action="/find-book-author" method="post">
+        <input type="hidden" id="bookauthor">
+        <input type="email" name="Bauthor" placeholder="enter author's mail">
+        <button type="submit">find book</button>
+    </form>
+    <h6 class="mt-4">find magazine by author</h6>
+    <form action="/find-magazine-author" method="post">
+        <input type="hidden" id="magazineauthor">
+        <input type="email" name="Mauthor" placeholder="enter author's mail">
+        <button type="submit">find magazine</button>
+    </form>
+</div>
+
+<div>
+    <div>{{book.title}}</div>
+    <div>{{book.isbn}}</div>
+    <div>{{book.authors}}</div>
+    {{#if book.description}}
+        <div>{{book.description}}</div>
+    {{else}}
+        {{#if book.publishedAt}}
+            <div>{{book.publishedAt}}</div>
+        {{/if}}
+    {{/if}}
+</div>
